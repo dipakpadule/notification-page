@@ -1,0 +1,172 @@
+$font-family: 'Plus Jakarta Sans', sans-serif;
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+
+
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue1: hsl(211, 68%, 94%);
+$Light-grayish-blue2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+$Font-size-paragraph: 1rem;
+
+.noti-card{
+  padding: 1.25rem 1rem;
+  
+  .noti-card-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.56rem;
+    h1{
+      color: $Very-dark-blue;
+      strong{
+        display: inline-block;
+        color: $White;
+        background: $Blue;
+        width: 2.3rem;
+        border-radius: 0.4rem;
+        text-align: center;
+      }
+    }
+    button{
+      border: none;
+      background: #fff;
+      color: $Grayish-blue;
+    }
+    button:hover{
+      cursor: pointer;
+      color: $Blue;
+      font-size: 1rem;
+    }
+  }
+  .read{
+    background: $White;
+    .n-info{
+      .reddot{
+        display: flex;
+        text-align: center;
+        visibility: hidden;
+        color: $Red;
+        font-size: 0.6rem;
+        margin-left: 0.5rem;
+    }
+  }
+  }
+  .unread{
+    background: $Very-light-grayish-blue;
+    .n-info{
+        .reddot{
+          visibility: visible;
+          color: $Red;
+          font-size: 0.7rem;
+          margin-left: 0.5rem;
+      }
+    }
+  }
+  .nc-notification{
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    img{
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.87rem;
+    }
+    .n-info{
+      display: flex;
+      flex-direction: column;
+      p{
+        color: $Dark-grayish-blue;
+        margin-bottom: 0.5rem;
+        strong{
+          color: $Very-dark-blue;
+          font-weight: 700;
+        }
+        strong:hover{
+          cursor: pointer;
+          color: $Blue;
+        }
+      }
+      span{
+        color: $Grayish-blue;
+      }
+    }
+  }
+  .n1{
+    .n-info{
+      p{
+        span{
+          color: $Dark-grayish-blue;
+          font-weight: 700;
+        }
+        span:hover{
+          cursor: pointer;
+          color: $Blue;
+        }
+      }
+    }
+  }
+  .n3{
+    .n-info{
+      p{
+        a{
+          text-decoration: none;
+          color: $Dark-grayish-blue;
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
+        a:hover{
+          color: $Blue;
+        }
+      }
+    }
+  }
+  .n4{
+    .n-info{
+      #msg{
+        margin-top: 0.7rem;
+        border: 1px solid $Grayish-blue;
+        border-radius: 0.5rem;
+        padding: 0.7rem;
+        color: $Grayish-blue;
+      }
+      #msg:hover{
+        cursor: pointer;
+        background: $Light-grayish-blue1;
+      }
+    }
+  }
+  .n7{
+    .n-info{
+      p{
+        a{
+          text-decoration: none;
+          color: $Dark-grayish-blue;
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
+        a:hover{
+          color: $Blue;
+        }
+      }
+    }
+  }
+ 
+}
+
+@media (min-width:90rem)
+{
+  body{
+    background: $Very-light-grayish-blue;
+  }
+  .noti-card{
+    background: $White;
+    margin-top: 4rem;
+    width: 45.62rem;
+    border-radius: 1rem;
+  }
+}
